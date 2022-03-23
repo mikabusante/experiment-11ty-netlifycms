@@ -1,8 +1,6 @@
 ---
 title: Hello World again!
-layout: base.html
+layout: index.html
 ---
 
-Hello there from index.md!
-
-Another content line here.
+Home page content
