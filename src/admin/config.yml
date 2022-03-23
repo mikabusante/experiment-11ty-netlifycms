@@ -7,6 +7,7 @@ public_folder: "/images/uploads"
 collections:
   - label: "Page"
     name: "pages"
+    file: "src/index.md"
     types:
       - label: "Carousel"
         name: "carousel"
