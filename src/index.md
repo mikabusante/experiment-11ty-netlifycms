@@ -1,5 +1,5 @@
 ---
-title: This is the home page.
+title: Financial fairness is Possible.
 layout: index.html
 ---
 
