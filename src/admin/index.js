@@ -25,7 +25,12 @@ const CTA_CLICK_THROUGH = {
   name: "cta_click_through",
   widget: "object",
   fields: [
-    { label: "Eyebrow Title", name: "eyebrow_title", widget: "string" },
+    {
+      label: "Eyebrow Title",
+      name: "eyebrow_title",
+      widget: "string",
+      hint: "Text that appears above the title.",
+    },
     { label: "Title", name: "title", widget: "string" },
     { label: "Body", name: "body", widget: "string" },
     { label: "CTA Text", name: "cta_text", widget: "string" },
