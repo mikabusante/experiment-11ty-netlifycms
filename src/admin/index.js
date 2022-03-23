@@ -60,6 +60,19 @@ CMS.init({
               },
             ],
           },
+          {
+            label: "Another Page",
+            name: "another_page",
+            file: "src/another-page.md",
+            fields: [
+              {
+                label: "Another Page Modules",
+                name: "another_page_modules",
+                widget: "list",
+                types: [CTA_CLICK_THROUGH],
+              },
+            ],
+          },
         ],
       },
     ],
