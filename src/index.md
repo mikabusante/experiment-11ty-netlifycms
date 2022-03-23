@@ -1,6 +1,4 @@
 ---
-title: Financial fairness is Possible.
+title: Title text here.
 layout: index.html
 ---
-
-Home page content
