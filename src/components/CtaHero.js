@@ -2,7 +2,7 @@ import { html, css, LitElement } from "https://cdn.skypack.dev/lit";
 
 class HelloWorld extends LitElement {
   static styles = css`
-    p {
+    h1 {
       color: blue;
     }
   `;
@@ -17,9 +17,11 @@ class HelloWorld extends LitElement {
   }
 
   render() {
+    console.log(this.data);
     return html`
       <section>
         <h1>This is the CTA Hero!</h1>
+        <p>body</p>
       </section>
     `;
   }
