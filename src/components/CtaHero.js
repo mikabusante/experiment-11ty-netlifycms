@@ -17,11 +17,10 @@ class HelloWorld extends LitElement {
   }
 
   render() {
-    console.log(this.data);
     return html`
       <section>
-        <h1>This is the CTA Hero!</h1>
-        <p>body</p>
+        <h1>This is the title: ${this.data.title}</h1>
+        <p>This is the body: ${this.data.body}</p>
       </section>
     `;
   }
