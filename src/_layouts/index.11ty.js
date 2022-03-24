@@ -8,11 +8,13 @@ class HelloWorld {
   render({ home_modules }) {
     return `
       <div>
-        ${home_modules.map((el) => `<${el.type}></${el.type}>`).join("")}
+        ${home_modules
+          .map((el) => `<${el.type} .data=${el}></${el.type}>`)
+          .join("")}
       </div>`;
   }
 }
 
 module.exports = HelloWorld;
 
-// todo: figure out why browser doesn't refresh for JS files
+// todo: figure out why browser sometimes doesn't refresh for JS files
