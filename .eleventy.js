@@ -1,5 +1,3 @@
-const eleventyVue = require("@11ty/eleventy-plugin-vue");
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/admin");
