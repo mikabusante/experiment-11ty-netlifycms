@@ -81,7 +81,7 @@ CMS.init({
           {
             label: "Vue Demo",
             name: "vue_demo",
-            file: "src/vue-demo.vue",
+            file: "src/vue-demo.md",
             fields: [
               {
                 label: "Vue Demo Modules",
