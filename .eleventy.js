@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/components");
 
   eleventyConfig.addWatchTarget("./src/components/");
+  eleventyConfig.addWatchTarget("./src/_includes/");
 
   eleventyConfig.addTransform("add-html-doctype", (content, outputPath) => {
     let doctype = "<!doctype html>";

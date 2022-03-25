@@ -2,7 +2,7 @@ const { CMS } = window;
 
 const CTA_HERO = {
   label: "CTA - Hero (with mobile number field)",
-  name: "cta_hero",
+  name: "cta-hero",
   widget: "object",
   fields: [
     { label: "Title", name: "title", widget: "string" },
@@ -22,7 +22,7 @@ const CTA_HERO = {
 
 const CTA_CLICK_THROUGH = {
   label: "CTA - Click through",
-  name: "cta_click_through",
+  name: "cta-click-through",
   widget: "object",
   fields: [
     {

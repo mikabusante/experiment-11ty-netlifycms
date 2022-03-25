@@ -6,9 +6,13 @@
       <style v-html="css" />
     </head>
     <body>
-      <p>Hello from Vue.</p>
-      <p>Hello from Eleventy.</p>
       <p>{{ title }}</p>
+
+      <div>
+        <p v-for="module in vue_demo_modules" :key="module.title">
+          <cta-click-through />
+        </p>
+      </div>
     </body>
   </html>
 </template>
@@ -20,8 +24,9 @@ body {
 </style>
 
 <script>
+import ctaClickThrough from "../_includes/ctaClickThrough.vue";
 export default {
-  components: {},
+  components: { ctaClickThrough },
   computed: {
     css: function () {
       return this.getVueComponentCssForPage(this.page.url);

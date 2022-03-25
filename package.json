@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "ELEVENTY_EXPERIMENTAL=true npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,6 @@
     "@11ty/eleventy": "^1.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-vue": "^0.7.2"
+    "@11ty/eleventy-plugin-vue": "^1.0.0-canary.6"
   }
 }
