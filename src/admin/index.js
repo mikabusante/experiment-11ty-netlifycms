@@ -78,6 +78,19 @@ CMS.init({
               },
             ],
           },
+          {
+            label: "Vue Demo",
+            name: "vue_demo",
+            file: "src/vue-demo.vue",
+            fields: [
+              {
+                label: "Vue Demo Modules",
+                name: "vue_demo_modules",
+                widget: "list",
+                types: [CTA_CLICK_THROUGH],
+              },
+            ],
+          },
         ],
       },
     ],
