@@ -8,7 +8,12 @@ class HelloWorld {
   render({ home_modules }) {
     return `<div>
       ${home_modules
-        .map((module) => `<${module.type} data='${JSON.stringify(module)}' />`)
+        .map(
+          (module) =>
+            `<${module.type} data='${JSON.stringify(module)}'></ ${
+              module.type
+            }>`
+        )
         .join("")}
     </div>`;
   }
