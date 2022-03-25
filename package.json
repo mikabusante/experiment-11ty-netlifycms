@@ -2,20 +2,18 @@
   "name": "experiment-11ty-netlifycms",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npx @11ty/eleventy --serve\" \"parcel watch src/style.scss\" \"parcel watch src/index.js\""
+    "dev": "ELEVENTY_EXPERIMENTAL=true npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@parcel/transformer-sass": "^2.4.0",
-    "@parcel/transformer-vue": "^2.4.0",
-    "concurrently": "^7.0.0",
-    "parcel": "^2.4.0"
+    "@11ty/eleventy": "^1.0.0"
   },
   "dependencies": {
-    "vue": "^3.2.31"
+    "@11ty/eleventy-plugin-vue": "^1.0.0-canary.6"
   }
 }
