@@ -65,32 +65,6 @@ CMS.init({
               },
             ],
           },
-          {
-            label: "Another Page",
-            name: "another_page",
-            file: "src/another-page.md",
-            fields: [
-              {
-                label: "Another Page Modules",
-                name: "another_page_modules",
-                widget: "list",
-                types: [CTA_CLICK_THROUGH],
-              },
-            ],
-          },
-          {
-            label: "Vue Demo",
-            name: "vue_demo",
-            file: "src/vue-demo.md",
-            fields: [
-              {
-                label: "Vue Demo Modules",
-                name: "vue_demo_modules",
-                widget: "list",
-                types: [CTA_CLICK_THROUGH],
-              },
-            ],
-          },
         ],
       },
     ],
