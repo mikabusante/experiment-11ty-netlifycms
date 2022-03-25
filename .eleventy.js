@@ -1,11 +1,13 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.setBrowserSyncConfig({
+    files: ["./dist/**/*.css", "./dist/**/*.js"],
+  });
 
   return {
     dir: {
       input: "src",
-      output: "public",
+      output: "dist",
       includes: "_includes",
       layouts: "_layouts",
     },
