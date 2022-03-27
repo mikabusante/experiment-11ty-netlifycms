@@ -1,0 +1,32 @@
+<section class="grid sm:grid-cols-2 gap-5 min-h-[60vh] max-h-screen">
+  <img
+    class="h-full object-cover"
+    src="{{ data.image }}"
+    alt="{{ data.image_alt_text }}"
+  />
+
+  <div class="flex flex-col justify-between">
+    <h1 class="pb-5 text-5xl text-blue sm:pb-0 sm:text-6xl">{{data.title}}</h1>
+
+    <div>
+      <p class="pb-16 sm:pb-6 text-blue">{{data.body}}</p>
+
+      <div class="hidden sm:flex rounded focus-within:ring w-max">
+        <input
+          class="border-2 border-blue border-r-0 rounded-l m-0 p-2 focus:outline-none"
+          type="text"
+          placeholder="{{ data.cta_field_placeholder_text }}"
+        />
+        <button
+          class="bg-blue text-white rounded-r p-2 focus:outline-none focus:bg-black"
+        >
+          {{ data.cta_text }}
+        </button>
+      </div>
+
+      <button class="bg-lime text-3xl p-4 w-full sm:hidden">
+        {{ data.cta_text }}
+      </button>
+    </div>
+  </div>
+</section>

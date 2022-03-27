@@ -1,0 +1,6 @@
+---
+layout: base.html
+---
+
+{% for module in home_modules %} {% include "{{module.type}}.html", data: module
+%} {% endfor %}
