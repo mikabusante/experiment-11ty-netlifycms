@@ -2,9 +2,9 @@
   "name": "experiment-11ty-netlifycms",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npx parcel src/index.css\" \"npx @11ty/eleventy --serve\""
+    "dev": "concurrently \"npx parcel src/index.css\" \"npx @11ty/eleventy --serve\"",
+    "build": "eleventy && parcel build src/index.css"
   },
   "keywords": [],
   "author": "",
